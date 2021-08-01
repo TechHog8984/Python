@@ -4,8 +4,8 @@ import requests, json, time
 def main():
     link = input('Enter link here: ')
     start = time.time()
-    get1 = 'https://bypass.bot.nu/bypass2?url=' + link
-    get2 = 'https://vacant-curtly-composure.herokuapp.com/bypass2?url=' + link
+    get1 = f'https://bypass.bot.nu/bypass2?url={link}'
+    get2 = f'https://vacant-curtly-composure.herokuapp.com/bypass2?url={link}'
     post1 = ' https://api.bypass.vip/'
     
     try:

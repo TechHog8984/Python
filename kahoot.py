@@ -2,9 +2,12 @@ import requests, random
 from threading import Thread
 
 def check(pin):
-    req = requests.get(f'https://kahoot.it/reserve/session/{pin}')
     try:
-        return req.json()
+        req = requests.get(f'https://kahoot.it/reserve/session/{pin}')
+        try:
+            return req.json()
+        except:
+            return False
     except:
         return False
 def gen():

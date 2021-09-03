@@ -11,10 +11,10 @@ def check(pin):
     except:
         return False
 def gen():
-            while True:
-                pin = random.randint(1000000, 9999999)
-                if check(pin):
-                    print(f'{pin}: success')
+        while True:
+            pin = random.randint(1000000, 9999999)
+            if check(pin):
+                print(f'{pin}: success')
 
 def main():
     t = input('Check a pin(1) or gen pins(2): ')

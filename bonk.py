@@ -1,13 +1,6 @@
 import os, requests, time, string, random
 
 url = 'https://bonk2.io/scripts/register_legacy.php'
-proxies_file = open('proxies.txt')
-proxies_text = proxies_file.read()
-proxies_file.close()
-proxies = []
-for line in proxies_text.split('\n'):
-    if line and len(line) > 2:
-        proxies.append(line)
 
 def unpack(s):
     result = ''
